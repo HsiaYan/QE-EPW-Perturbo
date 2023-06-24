@@ -39,7 +39,7 @@ Si 0.250000000 0.250000000 0.250000000
 K_POINTS {automatic}
 6 6 6 0 0 0
 
-2： 用更密集的网格进行非自洽计算。
+2： 用更密集的网格进行非自洽计算，网格要尽可能的密集。
 3： 将计算的k点及对应的本征值转为xcrysden软件的bxsf格式。
 fs.x < fs.in > fs.out
 &fermi
@@ -47,6 +47,6 @@ outdir='./'
 prefix='silicon'
 /
 4: 使用xcrysden来画图。
+xcrysden --bxsf silicon.bxsf
 ————————————————————————————————————————————————
-题外： 
-尝试使用vesta画图
+
